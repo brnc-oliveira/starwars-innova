@@ -1,0 +1,108 @@
+.containerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 180px;
+    margin-right: 80px;
+}
+
+.container {
+    background-color: var(--gray-600);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container img {
+    margin-left: 30px;
+    width: 150px;
+}
+
+.container span {
+    margin-left: 60px;
+}
+
+.searchBoxContainer input {
+    width: 25rem;
+    height: 2.7rem;
+    border-radius: 15px;
+    padding: 12px;
+    background-color: var(--gray-400);
+    border: none;
+    color: var(--gray-300);
+    transition: 0.2s;
+}
+
+.searchBoxContainer input:hover {
+    border: 1.5px solid var(--yellow-600);
+}
+
+.searchBoxContainer input:focus {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.searchBoxContainer:placeholder {
+    color: var(--gray-300);
+}
+
+@media(max-width: 1200px) {
+
+    .containerList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container img {
+        margin-left: 10px;
+        width: 100px;
+    }
+
+    .container span {
+        margin-left: 40px;
+    }
+
+    .searchBoxContainer input {
+        width: 20rem;
+        height: 2.7rem;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: var(--gray-400);
+        border: none;
+        color: var(--gray-300);
+        transition: 0.2s;
+    }
+
+    .container {
+        background-color: var(--gray-600);
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    .containerList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container span {
+        margin-left: 20px;
+    }
+
+    .searchBoxContainer input {
+        width: 15rem;
+        height: 2.7rem;
+        border-radius: 15px;
+        padding: 12px;
+        background-color: var(--gray-400);
+        border: none;
+        color: var(--gray-300);
+        transition: 0.2s;
+    }
+}
+
